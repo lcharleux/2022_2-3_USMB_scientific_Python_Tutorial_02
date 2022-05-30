@@ -30,12 +30,12 @@ The requirements of the module are minimal:
 * Hardware: 
   - Come with a laptop.
 
-* Sofware:
-  - A GITHub account.
+* Software:
+  - Create a [GITHub](https://github.com/) account.
   - Install the following software programs:
-  - [Anaconda](https://www.anaconda.com/products/distribution) : during the installation, choose the option to add Anaconda to your PYTHONPATH. This is presented as the alternative option [here.](https://www.datacamp.com/tutorial/installing-anaconda-windows)
-  - [Visual Studio Code](https://code.visualstudio.com/).
-  - [GIT](https://git-scm.com/downloads). 
+    - [Anaconda](https://www.anaconda.com/products/distribution) : during the installation, choose the option to add Anaconda to your PYTHONPATH. This is presented as the alternative option [here.](https://www.datacamp.com/tutorial/installing-anaconda-windows)
+    - [Visual Studio Code](https://code.visualstudio.com/).
+    - [GIT](https://git-scm.com/downloads). 
 
 **Remark** :  these programs exist for Windows, Linux and MAC OS. GIT is installed on Linux by default.
 ## SKILLS
