@@ -91,4 +91,13 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 
 #### Needs (round table):
 
-- [ ] To be completed
+- [ ] Matlab vers Python
+- [ ] Qu'est ce qu'un kernel ?
+- [ ] Modules, packages et tests unitaires.
+- [ ] Partage de code via GIT.
+- [ ] Modules liés à des domaines: Psycopy, OpenSesame.
+- [ ] Lecture fichiers textes, formats de données, échange avec Matlab.
+- [ ] Gestion de texte, tables CSV, et pandas.
+- [ ] Lancement de logiciels tierces, fichiers d'entrée et de sortie.
+- [ ] Traitement d'images, identificiation d'élements de microstructure. 
+
