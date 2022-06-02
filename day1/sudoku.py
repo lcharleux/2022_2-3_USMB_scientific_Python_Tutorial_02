@@ -12,7 +12,6 @@ def get_next_move(data):
     best_len = 9
     heatmap = np.zeros_like(data) * np.nan
     for r,c in np.array(np.where(data == 0)).T:
-        #r,c = 4,2 # ROW, COL
         R = set(data[r]) # ROW SET
         C = set(data[:, c]) # COL SET
         rb = (r//3)*3 # = r - r%3
@@ -36,6 +35,7 @@ def get_next_move(data):
 
 path = "sudoku_000.csv"
 data = read_csv_grid(path)
+data[1,1] = 9 # MAUVAISE IDEE
 flag, best_combination, heatmap = get_next_move(data)
 r, c, P = best_combination
 print(f"flag={flag}, r={r}, c={c}, P = {P}")
