@@ -67,7 +67,7 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 #### Better code
 
 - [ ] Functions and classes: why and how ?. Examples: vector, or csv dataset numerical integration.
-- [x] Fast code with Python (Python, numpy, numba): example Moore neighbors and the Game of Life
+- [ ] Fast code with Python (Python, numpy, numba): example Moore neighbors and the Game of Life
 
 #### Topics to chose
 
