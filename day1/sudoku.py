@@ -46,10 +46,15 @@ ax = fig.add_subplot(1,1,1)
 plt.xticks(range(9), [f"C{v+1}" for v in range(9)])
 plt.yticks(range(9), [f"R{v+1}" for v in range(9)])
 #plt.minorticks_on()
-
-plt.imshow(heatmap, cmap = "jet", alpha = .5)
+props = dict(boxstyle='round', facecolor="white", alpha=0.5)
+plt.imshow(heatmap, cmap = "jet", alpha = 1.)
 for i in range(9):
     for j in range(9):
-        ax.text(i, j, str(data[j,i]), va='center', ha='center')
+        if data[j, i] == 0:
+            ax.text(i, j, str(int(heatmap[j,i])), va='center', ha='center', 
+                color = "black", bbox = props)
+
+        else:
+            ax.text(i, j, str(data[j,i]), va='center', ha='center', color = "black")
 plt.colorbar()
 plt.show()
