@@ -35,7 +35,6 @@ def get_next_move(data):
 
 path = "sudoku_000.csv"
 data = read_csv_grid(path)
-data[1,1] = 9 # MAUVAISE IDEE
 flag, best_combination, heatmap = get_next_move(data)
 r, c, P = best_combination
 print(f"flag={flag}, r={r}, c={c}, P = {P}")
