@@ -57,16 +57,16 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 
 #### Introduction
 
-- [ ] Round table
-- [ ] Software verification
-- [ ] First example: simple 2D plot (numpy, matplotlib)
-- [ ] More complex example: CSV file and plot 3D map (pandas, scipy) or [elementary cellular automata](https://en.wikipedia.org/wiki/Elementary_cellular_automaton)
-- [ ] Classical IDE (VScode, Spyder)
+- [x] Round table
+- [x] Software verification
+- [x] First example: simple 2D plot (numpy, matplotlib)
+- [x] More complex example: CSV file and plot 3D map (pandas, scipy) or [elementary cellular automata](https://en.wikipedia.org/wiki/Elementary_cellular_automaton)
+- [x] Classical IDE (VScode, Spyder)
 - [ ] Notebook interface (Jupyter)
 
 #### Better code
 
-- [ ] Functions and classes: why and how ?. Examples: vector, or csv dataset numerical integration.
+- [x] Functions and classes: why and how ?. Examples: vector, or csv dataset numerical integration.
 - [ ] Fast code with Python (Python, numpy, numba): example Moore neighbors and the Game of Life
 
 #### Topics to chose
@@ -97,7 +97,7 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 - [ ] Partage de code via GIT.
 - [ ] Modules liés à des domaines: Psycopy, OpenSesame.
 - [ ] Lecture fichiers textes, formats de données, échange avec Matlab.
-- [ ] Gestion de texte, tables CSV, et pandas.
+- [x] Gestion de texte, tables CSV, et pandas.
 - [ ] Lancement de logiciels tierces, fichiers d'entrée et de sortie.
 - [ ] Traitement d'images, identificiation d'élements de microstructure. 
 
