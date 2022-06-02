@@ -136,7 +136,7 @@ class SudokuSolver:
 #path = "sudoku_000.csv"
 path = "sudoku_extreme.csv"
 sudoku = SudokuSolver(path)
-sudoku.grid *=0
+#sudoku.grid *=0
 sudoku.solve()
 sudoku.check()
 sudoku.plot()
