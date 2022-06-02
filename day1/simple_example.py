@@ -11,11 +11,13 @@ def myfunc(x, a=1.0, b=1.0, c=0.0, *args, **kwargs):
 x = np.linspace(0.0, 10.0, 11)
 y = myfunc(x, c=5)
 y2 = myfunc(x, c=2)
-
+ 
 plt.figure()
 i, j = 2, 3
 plt.title(f"Matrix: $\\alpha_{{{i}{j}}}$")
-plt.grid(which="major", color="k", linestyle="--")
+plt.grid(which="major", 
+      color="k", 
+      linestyle="--")
 # plt.grid(which="minor", color="gray", linestyle="--")
 plt.minorticks_on()
 plt.xlabel("Position, $x$")
@@ -38,3 +40,4 @@ plt.legend(loc="best")
 plt.savefig("myfig.png")
 plt.close()
 # plt.show() # Montre la figure
+ 
