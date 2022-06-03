@@ -62,7 +62,7 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 - [x] First example: simple 2D plot (numpy, matplotlib)
 - [x] More complex example: CSV file and plot 3D map (pandas, scipy) or [elementary cellular automata](https://en.wikipedia.org/wiki/Elementary_cellular_automaton)
 - [x] Classical IDE (VScode, Spyder)
-- [ ] Notebook interface (Jupyter)
+- [x] Notebook interface (Jupyter)
 
 #### Better code
 
@@ -91,13 +91,12 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 
 #### Needs (round table):
 
-- [ ] Matlab vers Python
-- [ ] Qu'est ce qu'un kernel ?
+- [x] Matlab vers Python
+- [x] Qu'est ce qu'un kernel ?
 - [x] Modules, packages et tests unitaires.
 - [x] Partage de code via GIT.
-- [ ] Modules liés à des domaines: Psycopy, OpenSesame.
+- [x] Modules liés à des domaines: Psycopy, OpenSesame.
 - [ ] Lecture fichiers textes, formats de données, échange avec Matlab.
 - [x] Gestion de texte, tables CSV, et pandas.
 - [ ] Lancement de logiciels tierces, fichiers d'entrée et de sortie.
-- [ ] Traitement d'images, identificiation d'élements de microstructure. 
-
+- [ ] Traitement d'images, identification d'éléments de microstructure. 
