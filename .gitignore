@@ -3,3 +3,4 @@ day_1/figure.png
 *.csv
 day1/myfig.png
 !day1/sudoku_000.csv
+**/_build/*
