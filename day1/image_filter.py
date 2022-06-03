@@ -10,7 +10,8 @@ path = "noisy_image.png"
 im = np.asarray(Image.open(path))
 
 
-filtered_im = np.zeros_like(im). astype(np.float64)
+filtered_im = np.zeros_like(im).astype(np.float64)
+
 
 @numba.jit
 def naive_image_filter(im, out):
@@ -29,31 +30,31 @@ def naive_image_filter(im, out):
                             value += im[r2, c2]
             out[r, c] = value / neighbors
 
+
 weight_mask = np.ones_like(im) * 9
 weight_mask[0] = 6
 weight_mask[-1] = 6
 weight_mask[:, 0] = 6
 weight_mask[:, -1] = 6
-weight_mask[0,0] = 4
-weight_mask[-1,0] = 4
-weight_mask[-1,-1] = 4
-weight_mask[0,-1] = 4
+weight_mask[0, 0] = 4
+weight_mask[-1, 0] = 4
+weight_mask[-1, -1] = 4
+weight_mask[0, -1] = 4
+
 
 def numpy_image_filer(im, out):
-    out[:] = im # CENTER
+    out[:] = im  # CENTER
 
-    out[  :-1,  :  ] += im[1:  , :  ] # RIGHT 
-    out[  :-1, 1:  ] += im[1:  , :-1] # RIGHT  TOP
-    out[  :  , 1:  ] += im[ :  , :-1] # CENTER TOP
-    out[ 1:  , 1:  ] += im[ :-1, :-1] # LEFT TOP
-    out[ 1:  ,  :  ] += im[ :-1, :  ] # LEFT CENTER
-    out[ 1:  ,  :-1] += im[ :-1,1:  ] # LEFT BOTTOM
-    out[  :  ,  :-1] += im[ :  ,1:  ] # CENTER BOTTOM
-    out[  :-1,  :-1] += im[1:  ,1:  ] 
+    out[:-1, :] += im[1:, :]  # RIGHT
+    out[:-1, 1:] += im[1:, :-1]  # RIGHT  TOP
+    out[:, 1:] += im[:, :-1]  # CENTER TOP
+    out[1:, 1:] += im[:-1, :-1]  # LEFT TOP
+    out[1:, :] += im[:-1, :]  # LEFT CENTER
+    out[1:, :-1] += im[:-1, 1:]  # LEFT BOTTOM
+    out[:, :-1] += im[:, 1:]  # CENTER BOTTOM
+    out[:-1, :-1] += im[1:, 1:]
     out[:] /= weight_mask
-    
-    
-    
+
 
 naive_image_filter(im, filtered_im)
 numpy_image_filer(im, filtered_im)
