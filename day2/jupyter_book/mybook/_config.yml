@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: My cat's book
+author: The owner of the cat
+logo: logo.jpeg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -14,6 +14,8 @@ execute:
 latex:
   latex_documents:
     targetname: book.tex
+  use_jupyterbook_latex: true
+  latex_engine: pdflatex
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
