@@ -12,7 +12,7 @@ im = np.asarray(Image.open(path))
 
 filtered_im = np.zeros_like(im). astype(np.float64)
 
-
+@numba.jit
 def naive_image_filter(im, out):
     nr, nc = im.shape
     for r in range(nr):
