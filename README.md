@@ -67,12 +67,12 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 #### Better code
 
 - [x] Functions and classes: why and how ?. Examples: vector, or csv dataset numerical integration.
-- [ ] Fast code with Python (Python, numpy, numba): example Moore neighbors and the Game of Life
+- [x] Fast code with Python (Python, numpy, numba): example Moore neighbors and the Game of Life
 
 #### Topics to chose
 
-- [ ] Data processing with Pandas
-- [ ] Image processing
+- [x] Data processing with Pandas
+- [x] Image processing
 - [ ] Applied math: optimization, integration, ODE, curve fitting.
 - [ ] Machine learning: Scikit, Pytorch,
 - [ ] Others
@@ -93,8 +93,8 @@ Each participant must come with a laptop with WIFI connection throughout the mod
 
 - [ ] Matlab vers Python
 - [ ] Qu'est ce qu'un kernel ?
-- [ ] Modules, packages et tests unitaires.
-- [ ] Partage de code via GIT.
+- [x] Modules, packages et tests unitaires.
+- [x] Partage de code via GIT.
 - [ ] Modules liés à des domaines: Psycopy, OpenSesame.
 - [ ] Lecture fichiers textes, formats de données, échange avec Matlab.
 - [x] Gestion de texte, tables CSV, et pandas.
